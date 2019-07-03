@@ -4,8 +4,10 @@ import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 
 const Header = () => (
-  <header>
-    <h1>Tolu's Website</h1>
+  <header className={headerStyles.header}>
+    <Link className={headerStyles.nameLink} to="/">
+      Tolu Kalejaiye
+    </Link>
     <nav>
       <ul className={headerStyles.navList}>
         <li>
