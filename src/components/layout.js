@@ -5,10 +5,12 @@ import "../styles/index.scss"
 import Header from "./header"
 import Footer from "./footer"
 
+import layoutStyles from "./layout.module.scss"
+
 const Layout = ({ children }) => {
   return (
-    <div>
-      <div>
+    <div className={layoutStyles.container}>
+      <div className={layoutStyles.content}>
         <Header />
         {children}
       </div>

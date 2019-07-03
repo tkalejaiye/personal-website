@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.social-list-item {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #8a8a8d;
+
+  &:hover {
+    color: #000000;
+  }
+}
