@@ -1,0 +1,15 @@
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+.active-nav-item {
+  color: #000000;
+}
