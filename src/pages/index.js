@@ -12,7 +12,7 @@ const IndexPage = () => {
     query {
       file(relativePath: { eq: "images/profile.jpg" }) {
         childImageSharp {
-          fixed(height: 500) {
+          fixed(width: 500, height: 600) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -24,13 +24,7 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
       <div className={indexStyles.container}>
-        <Img
-          fixed={data.file.childImageSharp.fixed}
-          alt="profile photo"
-          className={indexStyles.profile}
-        />
-
-        <div>
+        <div className={indexStyles.content}>
           <h1>Hi, I'm Tolu!</h1>
           <h2>I'm a software developer based in Lagos, Nigeria</h2>
           <p>
@@ -38,6 +32,12 @@ const IndexPage = () => {
             innovation, spread knowledge, and create opportunities
           </p>
         </div>
+
+        <Img
+          fixed={data.file.childImageSharp.fixed}
+          alt="profile photo"
+          className={indexStyles.profile}
+        />
       </div>
     </Layout>
   )
