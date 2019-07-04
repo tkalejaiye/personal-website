@@ -1,12 +1,14 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 import contactStyles from "./contact.module.scss"
 
 const ContactPage = () => {
   return (
     <Layout>
+      <Head title="Contact" />
       <h1>Contact</h1>
       <p>
         Looking for a freelancer to help you build your next e-commerce site or
